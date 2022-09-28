@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Phone Test'),
+      home: const MyHomePage(title: 'Testing For First Time'),
     );
   }
 }
