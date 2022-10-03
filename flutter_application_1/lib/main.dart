@@ -68,3 +68,36 @@ class _RandomWordsState extends State<RandomWords> {
     );
   }
 }
+
+class Page2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Page 1')),
+      body: Center(
+          child: RaisedButton(
+        OnPressed: () {
+          Navigator.of(context)
+              .push(MaterialPageRoute(builder: (context) => Page2()));
+        },
+        child: Text('Open page 2'),
+      )),
+    );
+  }
+}
+
+class Page2 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Page 2')),
+      body: Center(
+          child: RaisedButton(
+        OnPressed: () {
+          Navigator.of(context).pop();
+        },
+        child: Text('Go back to page 1'),
+      )),
+    );
+  }
+}
